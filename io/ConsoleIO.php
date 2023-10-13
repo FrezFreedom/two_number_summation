@@ -1,6 +1,6 @@
 <?php
 
-require_once('IOAbstraction.php');
+namespace Io;
 
 class ConsoleIO extends IOAbstraction
 {

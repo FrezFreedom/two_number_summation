@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-require_once ('StringIOMock.php');
+namespace Tests;
 
+use Exception;
 use PHPUnit\Framework\TestCase;
-
 
 class StringIOMockTest extends TestCase
 {

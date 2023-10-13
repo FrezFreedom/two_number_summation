@@ -1,5 +1,9 @@
 <?php
 
+namespace Io;
+
+use Exception;
+
 abstract class IOAbstraction
 {
     abstract public function input(): string;

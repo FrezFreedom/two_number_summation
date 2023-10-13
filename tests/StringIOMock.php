@@ -1,6 +1,8 @@
 <?php
 
-require_once (__DIR__ . '/../io/IOAbstraction.php');
+namespace Tests;
+
+use Io\IOAbstraction;
 
 class StringIOMock extends IOAbstraction
 {

@@ -1,8 +1,9 @@
 <?php declare(strict_types=1);
 
-use PHPUnit\Framework\TestCase;
+namespace Tests;
 
-require_once (__DIR__ . '/../app/TwoNumberSummation.php');
+use PHPUnit\Framework\TestCase;
+use App\TwoNumberSummation;
 
 class TwoNumberSummationTest extends TestCase
 {
@@ -18,7 +19,7 @@ class TwoNumberSummationTest extends TestCase
         $this->assertEquals($expectedAnswer, $answer);
     }
 
-    public static function provideTwoNumberSummationData(): Generator
+    public static function provideTwoNumberSummationData()
     {
         yield [
             true,

@@ -1,7 +1,8 @@
 <?php
 
-require_once ('RepositoryInterface.php');
-require_once ('FileServiceInterface.php');
+namespace Repository;
+
+use Exception;
 
 class FileRepository implements RepositoryInterface
 {

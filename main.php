@@ -1,12 +1,12 @@
 <?php
 
-require_once ('app/TwoNumberSummation.php');
-require_once ('app/Application.php');
-require_once ('io/ConsoleIO.php');
-require_once ('repository/FileService.php');
-require_once ('repository/RepositoryInterface.php');
-require_once ('repository/FileRepository.php');
+require 'vendor/autoload.php';
 
+use App\TwoNumberSummation;
+use App\Application;
+use Io\ConsoleIO;
+use Repository\FileService;
+use Repository\FileRepository;
 
 $twoNumberSummation = new TwoNumberSummation();
 $io = new ConsoleIO();

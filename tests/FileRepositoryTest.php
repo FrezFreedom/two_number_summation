@@ -1,9 +1,11 @@
 <?php declare(strict_types=1);
 
-use PHPUnit\Framework\TestCase;
+namespace Tests;
 
-require_once (__DIR__ . '/../repository/FileRepository.php');
-require_once (__DIR__ . '/../repository/FileServiceInterface.php');
+use Exception;
+use PHPUnit\Framework\TestCase;
+use Repository\FileRepository;
+use Repository\FileServiceInterface;
 
 class FileRepositoryTest extends TestCase
 {
@@ -22,14 +24,14 @@ class FileRepositoryTest extends TestCase
 
     private static function createMockOfFileServiceInterface(bool $fileExistsReturn, bool | string $fileGetContentsReturn): FileServiceInterface
     {
-        $mockOfFileService = \Mockery::mock('FileServiceInterface');
+        $mockOfFileService = \Mockery::mock(FileServiceInterface::class);
         $mockOfFileService->shouldReceive('fileExists')->andReturn($fileExistsReturn);
         $mockOfFileService->shouldReceive('fileGetContents')->andReturn($fileGetContentsReturn);
 
         return $mockOfFileService;
     }
 
-    public static function provideLoadNumericListExceptionsData(): Generator
+    public static function provideLoadNumericListExceptionsData()
     {
         yield [
             'File not found.',
@@ -70,7 +72,7 @@ class FileRepositoryTest extends TestCase
         $this->assertEquals($expectOutput, $output);
     }
 
-    public static function provideLoadNumericListData(): Generator
+    public static function provideLoadNumericListData()
     {
         yield [
             [],

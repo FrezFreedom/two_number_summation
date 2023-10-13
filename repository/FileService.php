@@ -1,5 +1,6 @@
 <?php
 
+namespace Repository;
 
 class FileService implements FileServiceInterface
 {
