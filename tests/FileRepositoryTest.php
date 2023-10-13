@@ -2,8 +2,8 @@
 
 use PHPUnit\Framework\TestCase;
 
-require_once (__DIR__ . '/../FileRepository.php');
-require_once (__DIR__ . '/../FileServiceInterface.php');
+require_once (__DIR__ . '/../repository/FileRepository.php');
+require_once (__DIR__ . '/../repository/FileServiceInterface.php');
 
 class FileRepositoryTest extends TestCase
 {

@@ -1,11 +1,11 @@
 <?php
 
-require_once ('TwoNumberSummation.php');
-require_once ('ConsoleIO.php');
-require_once ('RepositoryInterface.php');
-require_once ('FileRepository.php');
-require_once ('Application.php');
-require_once ('FileService.php');
+require_once ('app/TwoNumberSummation.php');
+require_once ('app/Application.php');
+require_once ('io/ConsoleIO.php');
+require_once ('repository/FileService.php');
+require_once ('repository/RepositoryInterface.php');
+require_once ('repository/FileRepository.php');
 
 
 $twoNumberSummation = new TwoNumberSummation();

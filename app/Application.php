@@ -1,10 +1,10 @@
 <?php
 
 require_once ('TwoNumberSummation.php');
-require_once('ConsoleIO.php');
-require_once ('RepositoryInterface.php');
-require_once ('FileRepository.php');
-require_once('IOAbstraction.php');
+require_once (__DIR__ . '/../io/ConsoleIO.php');
+require_once (__DIR__ . '/../repository/RepositoryInterface.php');
+require_once (__DIR__ . '/../repository/FileRepository.php');
+require_once (__DIR__ . '/../io/IOAbstraction.php');
 
 class Application
 {

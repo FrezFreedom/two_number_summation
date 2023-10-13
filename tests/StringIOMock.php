@@ -1,6 +1,6 @@
 <?php
 
-require_once (__DIR__ . '/../IOAbstraction.php');
+require_once (__DIR__ . '/../io/IOAbstraction.php');
 
 class StringIOMock extends IOAbstraction
 {

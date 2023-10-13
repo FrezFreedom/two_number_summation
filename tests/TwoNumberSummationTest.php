@@ -2,7 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 
-require_once (__DIR__ . '/../TwoNumberSummation.php');
+require_once (__DIR__ . '/../app/TwoNumberSummation.php');
 
 class TwoNumberSummationTest extends TestCase
 {
