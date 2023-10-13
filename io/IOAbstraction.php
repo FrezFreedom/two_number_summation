@@ -19,7 +19,7 @@ abstract class IOAbstraction
         return intval($x);
     }
 
-    public function printList(array $list)
+    public function printList(array $list): void
     {
         $this->output('[');
 

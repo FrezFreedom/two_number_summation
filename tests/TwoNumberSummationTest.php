@@ -27,6 +27,12 @@ class TwoNumberSummationTest extends TestCase
         ];
 
         yield [
+            true,
+            10,
+            [1, 6, 4],
+        ];
+
+        yield [
             false,
             6,
             [1, 6, 4],
